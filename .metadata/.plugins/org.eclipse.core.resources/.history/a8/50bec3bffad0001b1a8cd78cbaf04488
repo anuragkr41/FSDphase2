@@ -1,0 +1,5 @@
+package com.learnersAcademy.models;
+
+public class Assign_teacher_to_class {
+
+}

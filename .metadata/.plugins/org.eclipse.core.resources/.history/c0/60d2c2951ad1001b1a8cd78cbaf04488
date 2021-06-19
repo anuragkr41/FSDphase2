@@ -1,0 +1,123 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  
+  <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.Anurag.web.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddClassServlet</servlet-name>
+  	<display-name>AddClassServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learnersAcademy.web.AddClassServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddTeacherServlet</servlet-name>
+  	<display-name>AddTeacherServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learnersAcademy.web.AddTeacherServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddSubject</servlet-name>
+  	<display-name>AddSubject</display-name>
+  	<description></description>
+  	<servlet-class>com.learnersAcademy.web.AddSubject</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>TestServlet</servlet-name>
+  	<display-name>TestServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learnersAcademy.web.TestServlet</servlet-class>
+  </servlet>
+  
+  
+  
+  <servlet>
+  	<servlet-name>RemoveClassesServlet</servlet-name>
+  	<display-name>RemoveClassesServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learnersAcademy.web.RemoveClassesServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RemoveTeachersServlet</servlet-name>
+  	<display-name>RemoveTeachersServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learnersAcademy.web.RemoveTeachersServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>RemoeSubjectsServlet</servlet-name>
+  	<display-name>RemoeSubjectsServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learnersAcademy.web.RemoeSubjectsServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AssignSubjectServlet</servlet-name>
+  	<display-name>AssignSubjectServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learnersAcademy.web.AssignSubjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AssignTeacherServlet</servlet-name>
+  	<display-name>AssignTeacherServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.learnersAcademy.web.AssignTeacherServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddClassServlet</servlet-name>
+  	<url-pattern>/AddClassServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddTeacherServlet</servlet-name>
+  	<url-pattern>/AddTeacherServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddSubject</servlet-name>
+  	<url-pattern>/AddSubject</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>TestServlet</servlet-name>
+  	<url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet-mapping>
+  	<servlet-name>RemoveClassesServlet</servlet-name>
+  	<url-pattern>/RemoveClassesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RemoveTeachersServlet</servlet-name>
+  	<url-pattern>/RemoveTeachersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RemoeSubjectsServlet</servlet-name>
+  	<url-pattern>/RemoeSubjectsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AssignSubjectServlet</servlet-name>
+  	<url-pattern>/AssignSubjectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AssignTeacherServlet</servlet-name>
+  	<url-pattern>/AssignTeacherServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  <welcome-file-list>
+  	<welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+</web-app>

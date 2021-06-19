@@ -1,0 +1,10 @@
+package com.learnersAcademy.models;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Assign_teacher_to_class {
+	
+	@Column
+
+}
