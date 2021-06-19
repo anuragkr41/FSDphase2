@@ -192,9 +192,19 @@
 					<h4>Assign Teacher to Class</h4>
 				</figcaption>
 			</figure>
+			
+			
+
 
 
 		</div>
+		<figure class="figure col themed-grid-col">
+				<a href="<%=request.getContextPath()%>/ViewSubjectTeachers.jsp"><img src="images/Teachers/Assign teacher class.png"
+					height=150px></a>
+				<figcaption class="figure-caption mt-3">
+					<h4>View Subject Teachers</h4>
+				</figcaption>
+			</figure>
 	</div>
 
 	

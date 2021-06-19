@@ -183,13 +183,13 @@
 														class="form-control">
 														<option value="" selected disabled>----Blood
 															Group*----</option>
-														<option value="Pre-Nursery">B+ve</option>
-														<option>B-ve</option>
-														<option>AB+</option>
-														<option>A+</option>
-														<option>A-</option>
-														<option>O+</option>
-														<option>O-</option>
+														<option value="B+ve">B+ve</option>
+														<option value="B-ve">B-ve</option>
+														<option value="AB+">AB+</option>
+														<option value="A+">A+</option>
+														<option value="A-">A-</option>
+														<option value="O+">O+</option>
+														<option value="O-">O-</option>
 
 													</select>
 
