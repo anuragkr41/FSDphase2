@@ -78,11 +78,9 @@
 				<div class="card-body">
 					<h5 class="card-title">Total Students: <%=noOfStudents %></h5>
 					<p class="card-text">
-					Last Student added at:  
-					Total Number of Students are: 
+					Last Student added at: <strong>2021-06-19 23:14:47</strong> <br> 
+					Student Name: <strong>Neha Sharma</strong>  
 					
-					Some quick example text to build on the
-						card title and make up the bulk of the card's content.
 						
 						</p>
 				</div>
@@ -91,8 +89,10 @@
 				
 				<div class="card-body">
 					<h5 class="card-title">Total Teachers: <%=noOfTeachers %></h5>
-					<p class="card-text">Some quick example text to build on the
-						card title and make up the bulk of the card's content.</p>
+					<p class="card-text">Last Teacher added at: <strong>2021-06-20 01:15:23</strong> <br> 
+					Teacher Name: <strong>Ravidas Phogat</strong> 
+					
+					</p>
 				</div>
 			</div>
 			
@@ -100,8 +100,9 @@
 				
 				<div class="card-body">
 					<h5 class="card-title">Total Classes: <%=noOfClasses %></h5>
-					<p class="card-text">Some quick example text to build on the
-						card title and make up the bulk of the card's content.</p>
+					<p class="card-text">Last Class Created at: <strong>2021-06-19 18:54:12</strong><br>
+					Class Name: <strong>XII F</strong> 
+					</p>
 				</div>
 			</div>
 			
@@ -110,15 +111,14 @@
 				<div class="card-body">
 					<h5 class="card-title">Total Subjects: <%=noOfSubjects %></h5>
 					<p class="card-text">
-					Total Number of Students are: 
-					
-					Some quick example text to build on the
-						card title and make up the bulk of the card's content.
-						
+					Last Subject Added at: <strong>2021-06-20 01:12:51</strong><br>
+						Subject Name: <strong> Basic Computers</strong> 
 						</p>
 				</div>
 			</div>
 		</div>
-	</div>S
+	</div>
+		<%@include file="footer.jsp"%>
+	
 </body>
 </html>

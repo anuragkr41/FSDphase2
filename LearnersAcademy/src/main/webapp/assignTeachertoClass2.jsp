@@ -16,7 +16,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Assign Teacher 2</title>
+<title>Assign Subject</title>
 
 <!-- Bootstrap CSS -->
 <link
@@ -39,7 +39,7 @@
 		crossorigin="anonymous"></script>
 
 	<%@include file="Main_Menu.jsp"%>
-	<h1 class="display-5 mt-5 mb-5" style="text-align: center;">Assign Teacher</h1>
+	<h1 class="display-5 mt-5 mb-5" style="text-align: center;">Assign Subject</h1>
 	<%!List<Classes> classlist = new ArrayList<Classes>();
 	List<Teacher> teacherlist = new ArrayList<Teacher>();
 	List<Subject> subjectList = new ArrayList<Subject>();

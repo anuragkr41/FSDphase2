@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Teachers Masterlist</title>
+<title>Subject Teachers List</title>
 
 <!-- Bootstrap CSS -->
 <link
@@ -35,8 +35,7 @@
 
 	<%@include file="Main_Menu.jsp"%>
 
-	<h1 class="display-5 mt-5" style="text-align: center;">Teachers
-		MasterList</h1>
+	<h1 class="display-5 mt-5" style="text-align: center;">Subject Teachers List</h1>
 
 
 	<div class="container mt-5 col-12">

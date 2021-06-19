@@ -195,7 +195,7 @@
 	<div class="container mt-5 col-8">
 		<div class="row .col-sm|md|lg|xl">
 			<figure class="figure col themed-grid-col">
-				<a href="#"><img src="images/Classes/Assign Teachers.png"
+				<a href="<%=request.getContextPath()%>/assignTeacherToClass.jsp"><img src="images/Classes/Assign Teachers.png"
 					height=150px></a>
 				<figcaption class="figure-caption mt-3" style="margin-left: 2rem;">
 					<h4>Assign Teachers</h4>
