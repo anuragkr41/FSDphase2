@@ -1,3 +1,4 @@
+<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Date"%>
 <%@page import="com.learnersAcademy.models.Subject"%>
 <%@page import="com.learnersAcademy.models.Teacher"%>
@@ -56,15 +57,43 @@
           %>
           <%
           sf = HibernateUtil.getSessionFactory();
-          classlist=sf.openSession().createNativeQuery("Select * from classes",Classes.class).getResultList();
-             			
-    			
-    			int noOfStudents=sf.openSession().createNativeQuery("SELECT * FROM students").getResultList().size();
-    			int noOfClasses= sf.openSession().createNativeQuery("SELECT * FROM classes").getResultList().size();
-    			int noOfTeachers= sf.openSession().createNativeQuery("SELECT * FROM teachers").getResultList().size();
-    			int noOfSubjects= sf.openSession().createNativeQuery("SELECT * FROM subjects").getResultList().size();
-    		
-    		
+                    classlist=sf.openSession().createNativeQuery("Select * from classes",Classes.class).getResultList();
+                       			
+              			
+              			int noOfStudents=sf.openSession().createNativeQuery("SELECT * FROM students").getResultList().size();
+              			int noOfClasses= sf.openSession().createNativeQuery("SELECT * FROM classes").getResultList().size();
+              			int noOfTeachers= sf.openSession().createNativeQuery("SELECT * FROM teachers").getResultList().size();
+              			int noOfSubjects= sf.openSession().createNativeQuery("SELECT * FROM subjects").getResultList().size();
+              			String lastStudentAddedFirstName= (String)sf.openSession().createNativeQuery("SELECT first_name FROM students ORDER BY insert_date DESC limit 1").uniqueResult();
+              			String lastStudentAddedLastName= (String)sf.openSession().createNativeQuery("SELECT last_name FROM students ORDER BY insert_date DESC limit 1").uniqueResult();
+              			Date lastStudentAddedTime= (Date)sf.openSession().createNativeQuery("SELECT insert_date FROM students ORDER BY insert_date DESC LIMIT 1;").uniqueResult();
+              			String formattedStudentDate = new SimpleDateFormat("dd-MM-YYYY").format(lastStudentAddedTime);
+              			String formattedStudentTime = new SimpleDateFormat("HH:MM a").format(lastStudentAddedTime);
+              			
+              			
+
+              			
+              			String lastTeacherAddedFirstName= (String)sf.openSession().createNativeQuery("SELECT first_name FROM teachers ORDER BY insert_date DESC limit 1").uniqueResult();
+              			String lastTeacherAddedLastName= (String)sf.openSession().createNativeQuery("SELECT last_name FROM teachers ORDER BY insert_date DESC limit 1").uniqueResult();
+              			Date lastTeacherAddedTime= (Date)sf.openSession().createNativeQuery("SELECT insert_date FROM teachers ORDER BY insert_date DESC LIMIT 1;").uniqueResult();
+              			String formattedTeacherDate = new SimpleDateFormat("dd-MM-YYYY").format(lastTeacherAddedTime);
+              			String formattedTeacherTime = new SimpleDateFormat("HH:MM a").format(lastTeacherAddedTime);
+              			
+
+              			String lastestClassAddedName= (String)sf.openSession().createNativeQuery("SELECT classname FROM classes ORDER BY insert_date DESC limit 1").uniqueResult();
+              			String lastestClassSectionAddedName= (String)sf.openSession().createNativeQuery("SELECT section FROM classes ORDER BY insert_date DESC limit 1").uniqueResult();
+              			Date lastClassAddedTime= (Date)sf.openSession().createNativeQuery("SELECT insert_date FROM classes ORDER BY insert_date DESC LIMIT 1;").uniqueResult();
+              			String formattedClassDate = new SimpleDateFormat("dd-MM-YYYY").format(lastClassAddedTime);
+              			String formattedClassTime = new SimpleDateFormat("HH:MM a").format(lastClassAddedTime);
+              			
+              			
+              			String lastSubjectAddedName= (String)sf.openSession().createNativeQuery("SELECT subject_name FROM subjects ORDER BY insert_date DESC limit 1").uniqueResult();
+              			Date lastSubjectAddedTime = (Date) sf.openSession().createNativeQuery("SELECT insert_date FROM subjects ORDER BY insert_date DESC LIMIT 1;").uniqueResult();
+          		
+              			String formattedSubjectDate = new SimpleDateFormat("dd-MM-YYYY").format(lastSubjectAddedTime);
+              			String formattedSubjectTime = new SimpleDateFormat("HH:MM a").format(lastSubjectAddedTime);
+
+          		
           %>
 
 
@@ -78,8 +107,8 @@
 				<div class="card-body">
 					<h5 class="card-title">Total Students: <%=noOfStudents %></h5>
 					<p class="card-text">
-					Last Student added at: <strong>2021-06-19 23:14:47</strong> <br> 
-					Student Name: <strong>Neha Sharma</strong>  
+					Last Student added: <strong><%="on "+formattedStudentDate+" at "+formattedStudentTime %></strong> <br> 
+					Student Name: <strong><%=lastStudentAddedFirstName+" "+lastStudentAddedLastName %></strong>  
 					
 						
 						</p>
@@ -89,8 +118,8 @@
 				
 				<div class="card-body">
 					<h5 class="card-title">Total Teachers: <%=noOfTeachers %></h5>
-					<p class="card-text">Last Teacher added at: <strong>2021-06-20 01:15:23</strong> <br> 
-					Teacher Name: <strong>Ravidas Phogat</strong> 
+					<p class="card-text">Last Teacher added at: <strong><%="on "+formattedTeacherDate+" at "+formattedTeacherTime %></strong> <br> 
+					Teacher Name: <strong><%=lastTeacherAddedFirstName+" "+lastTeacherAddedLastName %></strong> 
 					
 					</p>
 				</div>
@@ -100,8 +129,8 @@
 				
 				<div class="card-body">
 					<h5 class="card-title">Total Classes: <%=noOfClasses %></h5>
-					<p class="card-text">Last Class Created at: <strong>2021-06-19 18:54:12</strong><br>
-					Class Name: <strong>XII F</strong> 
+					<p class="card-text">Last Class Created at: <strong><%="on "+formattedClassDate+" at "+formattedClassTime %></strong><br>
+					Class Name: <strong><%=lastestClassAddedName+" "+lastestClassSectionAddedName %></strong> 
 					</p>
 				</div>
 			</div>
@@ -111,8 +140,8 @@
 				<div class="card-body">
 					<h5 class="card-title">Total Subjects: <%=noOfSubjects %></h5>
 					<p class="card-text">
-					Last Subject Added at: <strong>2021-06-20 01:12:51</strong><br>
-						Subject Name: <strong> Basic Computers</strong> 
+					Last Subject Added at: <strong><%="on "+formattedSubjectDate+" at "+formattedSubjectTime %></strong><br>
+						Subject Name: <strong><%=lastSubjectAddedName %></strong> 
 						</p>
 				</div>
 			</div>
