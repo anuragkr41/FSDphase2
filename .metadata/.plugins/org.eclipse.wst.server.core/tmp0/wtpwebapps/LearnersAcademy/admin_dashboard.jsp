@@ -38,23 +38,23 @@
     <div class="row .col-sm|md|lg|xl">
 
       <figure class="figure col themed-grid-col shadow p-3 mb-5 bg-white rounded " style= "margin-right: 1rem;">
-        <a href="teachers.jsp"><img src="images/Admin_Dashboard/teacher.png" height=150px></a>
-        <figcaption class="figure-caption mt-3" style="margin-left: 2rem;"><h4>Teacher</h4></figcaption>
+        <a href="teachers.jsp"><img src="images/Admin_Dashboard/teacher.png" style="margin-left: 3rem;" height=100px></a>
+        <figcaption class="figure-caption mt-3" style="margin-left: 3rem;"><h4>Teacher</h4></figcaption>
       </figure>
 
       <figure class="figure col themed-grid-col shadow p-3 mb-5 bg-white rounded"  style= "margin-right: 1rem;">
-        <a href="classes.jsp"><img src="images/Admin_Dashboard/classes.png" height=150px></a>
-        <figcaption class="figure-caption  mt-3"style="margin-left: 2rem;"><h4>Classes</h4></figcaption>
+        <a href="classes.jsp"><img src="images/Admin_Dashboard/classes.png" style="margin-left: 3rem;" height=100px></a>
+        <figcaption class="figure-caption  mt-3"style="margin-left: 3rem;"><h4>Classes</h4></figcaption>
       </figure>
 
       <figure class="figure col themed-grid-col shadow p-3 mb-5 bg-white rounded"  style= "margin-right: 1rem;">
-        <a href="subjects.jsp"><img src="images/Admin_Dashboard/Subject.png" height=150px></a>
-        <figcaption class="figure-caption mt-3" style="margin-left: 2rem;"><h4>Subjects</h4></figcaption>
+        <a href="subjects.jsp"><img src="images/Admin_Dashboard/Subject.png" style="margin-left: 3rem;" height=100px></a>
+        <figcaption class="figure-caption mt-3" style="margin-left: 4rem;"><h4>Subjects</h4></figcaption>
       </figure>
 
       <figure class="figure col themed-grid-col shadow p-3 mb-5 bg-white rounded"  style= "margin-right: 1rem;">
-        <a href="students.jsp"><img src="images/Admin_Dashboard/student.png" height=150px></a>
-        <figcaption class="figure-caption mt-3" style="margin-left: 2rem;" ><h4>Students</h4></figcaption>
+        <a href="students.jsp"><img src="images/Admin_Dashboard/student.png" style="margin-left: 3rem;" height=100px></a>
+        <figcaption class="figure-caption mt-3" style="margin-left: 50px;" ><h4>Students</h4></figcaption>
       </figure>
     </div>
   </div>
@@ -62,8 +62,8 @@
   <div class="container mt-5 col-8">
     <div class="row .col-sm|md|lg|xl">
       <figure class="figure col-3 shadow p-3 mb-5 bg-white rounded">
-        <a href="reports.jsp"> <img src="images/Admin_Dashboard/Reports.png" height=150px></a>
-        <figcaption class="figure-caption mt-3" style="margin-left: 2rem;"><h4>Reports</h4></figcaption>
+        <a href="reports.jsp"> <img src="images/Admin_Dashboard/Reports.png" style="margin-left: 3rem;" height=100px></a>
+        <figcaption class="figure-caption mt-3" style="margin-left: 4rem;"><h4>Reports</h4></figcaption>
       </figure>
     </div>
   </div>
