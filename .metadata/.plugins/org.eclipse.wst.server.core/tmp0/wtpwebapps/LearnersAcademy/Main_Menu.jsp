@@ -28,16 +28,19 @@
             <li class="nav-item">
               <a class="nav-link active px-3" aria-current="page" href="<%=request.getContextPath()%>/admin_dashboard.jsp">Home</a>
             </li>
+            
+            
   
             <li class="nav-item dropdown px-3">
               <a class="nav-link dropdown-toggle" href="teachers.jsp" id="dropdown03" data-bs-toggle="dropdown"
                 aria-expanded="false">Teachers</a>
               <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                <li><a class="dropdown-item" href="#">View all teachers</a></li>
-                <li><a class="dropdown-item" href="#">Add new Teacher</a></li>
-                <li><a class="dropdown-item" href="#">Remove Teacher</a></li>
-                <li><a class="dropdown-item" href="#">Assign Subject to Teacher</a></li>
-                <li><a class="dropdown-item" href="#">Assign Class to Teacher</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/show_Teachers.jsp">View all teachers</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/add_Teacher.jsp">Add new Teacher</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/teachers.jsp">Remove Teacher</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/assignTeacherToClass.jsp">Assign Subject to Teacher</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/ViewSubjectTeachers.jsp">View Subject Teachers</a></li>
+                
   
               </ul>
             </li>
@@ -46,9 +49,9 @@
               <a class="nav-link dropdown-toggle" href="students.jsp" id="dropdown03" data-bs-toggle="dropdown"
                 aria-expanded="false">Students</a>
               <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                <li><a class="dropdown-item" href="#">List of Student by class</a></li>
-                <li><a class="dropdown-item" href="#">Admit new student</a></li>
-                <li><a class="dropdown-item" href="#">Remove Student</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/show_Students.jsp">List of Student</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/add_Student.jsp">Admit new student</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/students.jsp">Remove Student</a></li>
               </ul>
             </li>
   
@@ -56,11 +59,11 @@
               <a class="nav-link dropdown-toggle" href="classes.jsp" id="dropdown03" data-bs-toggle="dropdown"
                 aria-expanded="false">Classes</a>
               <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                <li><a class="dropdown-item" href="#">View all classes</a></li>
-                <li><a class="dropdown-item" href="#">Remove class</a></li>
-                <li><a class="dropdown-item" href="#">Add new Class</a></li>
-                <li><a class="dropdown-item" href="#">Assign subject to class</a></li>
-                <li><a class="dropdown-item" href="#">Assign Teacher to class</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/show_Classes.jsp">View all classes</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/classes.jsp">Remove class</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/add_Class.jsp">Add new Class</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/AssignSubject.jsp">Assign subject to class</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/assignTeacherToClass.jsp">Assign Teacher to class</a></li>
   
   
               </ul>
@@ -70,10 +73,14 @@
               <a class="nav-link dropdown-toggle" href="subjects.jsp" id="dropdown03" data-bs-toggle="dropdown"
                 aria-expanded="false">Subjects</a>
               <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                <li><a class="dropdown-item" href="#">View subjects</a></li>
-                <li><a class="dropdown-item" href="#">Add new Subject</a></li>
-                <li><a class="dropdown-item" href="#">Remove Subject</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/show_Subjects.jsp">View subjects</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/add_Subject.jsp">Add new Subject</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/subjects.jsp">Remove Subject</a></li>
+                <li><a class="dropdown-item" href="<%=request.getContextPath()%>/AssignSubject.jsp">Assign Subject to Class</a></li>
               </ul>
+              <li class="nav-item">
+              <a class="nav-link active px-3" aria-current="page" href="<%=request.getContextPath()%>/reports.jsp">Reports</a>
+            </li>
             </li>
             <a href = "<%=request.getContextPath()%>/logout" class="btn btn-outline-light me-2">Logout</a>
           </ul>
